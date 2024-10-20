@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color:#282d2e
+}
+/*GENERALES*/
+
+main{
+    background-color: #e7e7e7;
+    display: grid;
+    grid-template-areas: "nav nav" "aside section" "footer footer";
+    grid-template-columns: 12% auto;
+}   
+
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* navbar */
+
+nav {
+    height:1rem;
+    align-items: center;
+    padding:1.5%;
+    display: flex;
+    justify-content: center;
+    background-color: #25527b;
+    grid-area: nav;
+    color:white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* aside */
+
+aside{
+    padding:10%;
+    gap:2%;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    border: 1px solid black;
+}
+
+aside > ul {
+    list-style-type: none;
+}
+aside > ul > li > small {
+    color:#a7a0a6
+}
+
+/* section */
+section{
+    display:flex;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 1%;
+    width: 100%;
+    grid-area: section;
+    flex-wrap: wrap; 
+}
+
+section > article {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    height: 50%;
+    text-align: center;
+    flex-basis: 30%;
+}
+
+section > article > button {
+    background-color: #25527b;
+    color:white;
+    font-size: 14px;
+    padding: 3%;
+}
+
+section > article > button:hover {
+    background-color: white;
+    color: black;
+}
+
+section > article > button:active {
+    background-color: #25527b;
+    color: white;
+}
+
+section img {
+    width: 400px;
+    height: 350px;
+}
+
+
+.product-image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* footer */
+footer{
+    height:1rem;
+    padding:1.5%;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25527b;
+    grid-area: footer;
+    font-weight: bold;
+}
+h3{
+    font-weight: normal;
+}
+

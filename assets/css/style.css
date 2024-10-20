@@ -44,7 +44,6 @@ aside{
     display: flex;
     flex-direction: column;
     grid-area: aside;
-    border: 1px solid black;
 }
 
 aside > ul {
